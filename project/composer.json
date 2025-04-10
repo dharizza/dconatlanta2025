@@ -21,6 +21,7 @@
         "drupal/core-project-message": "^11.0",
         "drupal/core-recommended": "^11.0",
         "drupal/devel": "^5.3",
+        "drupal/paragraphs": "^1.19",
         "drush/drush": "^13.2"
     },
     "require-dev": {
