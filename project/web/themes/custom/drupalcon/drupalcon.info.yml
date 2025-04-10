@@ -1,6 +1,6 @@
 name: drupalcon
 type: theme
-'base theme': stable9
+'base theme': olivero
 version: 1.0.0
 libraries:
   - drupalcon/base
