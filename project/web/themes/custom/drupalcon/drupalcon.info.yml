@@ -1,0 +1,22 @@
+name: drupalcon
+type: theme
+'base theme': stable9
+version: 1.0.0
+libraries:
+  - drupalcon/base
+  - drupalcon/messages
+  - core/normalize
+libraries-extend:
+  user/drupal.user:
+    - drupalcon/user
+  core/drupal.dropbutton:
+    - drupalcon/dropbutton
+  core/drupal.dialog:
+    - drupalcon/dialog
+  file/drupal.file:
+    - drupalcon/file
+  core/drupal.progress:
+    - drupalcon/progress
+description: ''
+core_version_requirement: ^11
+generator: 'starterkit_theme:11.1.5'
