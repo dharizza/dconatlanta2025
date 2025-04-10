@@ -1,0 +1,20 @@
+uuid: c4f1122e-69d6-45ff-bdad-0df48a292803
+langcode: en
+status: true
+dependencies:
+  theme:
+    - drupalcon
+_core:
+  default_config_hash: Q9_2whdOj1YIomfvsIfopROW4FT_X5pY0DjdOiOaQ5U
+id: drupalcon_primary_admin_actions
+theme: drupalcon
+region: highlighted
+weight: -5
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  label_display: '0'
+  provider: core
+visibility: {  }

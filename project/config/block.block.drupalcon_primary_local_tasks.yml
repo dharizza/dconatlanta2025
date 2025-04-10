@@ -1,0 +1,22 @@
+uuid: 1da75936-386f-4e38-87aa-7a5674b2df01
+langcode: en
+status: true
+dependencies:
+  theme:
+    - drupalcon
+_core:
+  default_config_hash: nGE3EoPQQaQCuqTUtZgw0-KIzmrqdKDzdNQf2JyPUt4
+id: drupalcon_primary_local_tasks
+theme: drupalcon
+region: highlighted
+weight: -4
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Primary tabs'
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: false
+visibility: {  }

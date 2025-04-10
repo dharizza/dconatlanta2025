@@ -1,0 +1,23 @@
+uuid: 787239cc-34dc-4760-bb34-9816b95894e5
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+  theme:
+    - drupalcon
+_core:
+  default_config_hash: 0gq3VPg-_UM69FCCWurLFIrrnIjC2HLKhwo9iQNtcUo
+id: drupalcon_syndicate
+theme: drupalcon
+region: social
+weight: 0
+provider: null
+plugin: node_syndicate_block
+settings:
+  id: node_syndicate_block
+  label: 'RSS feed'
+  label_display: '0'
+  provider: node
+  block_count: 10
+visibility: {  }
