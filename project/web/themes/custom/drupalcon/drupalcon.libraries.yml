@@ -107,3 +107,8 @@ font:
   css:
     base:
       https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap: {}
+
+tailwindcss:
+  css:
+    base:
+      dist/output.css: {}
