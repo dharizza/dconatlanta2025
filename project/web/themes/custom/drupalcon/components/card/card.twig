@@ -1,0 +1,27 @@
+{% set classes = [
+    'card',
+] %}
+<div{{ attributes.addClass(classes) }}>
+  {% block headerSlot %}
+    {% if card_image %}
+      <div class="card__image">{{ card_image }}</div>
+    {% endif %}
+  {% endblock headerSlot %}
+
+  {% block bodySlot %}
+    {% if card_description or card_title %}
+      <div class="card__body">
+        {% if card_title %}
+          <h3>{{ card_title }}</h3>
+          {{ card_description }}
+        {% endif %}
+      </div>
+    {% endif %}
+  {% endblock bodySlot %}
+
+  {% block footerSlot %}
+    {% if card_ctas %}
+      <div class="card__footer">{{ card_ctas }}</div>
+    {% endif %}
+  {% endblock footerSlot %}
+</div>
