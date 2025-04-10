@@ -49,10 +49,26 @@
 {% set attributes = attributes.addClass(classes) %}
 
 {# Call the card SDC passing only props. #}
-{{ include('drupalcon:card', {
+{# {{ include('drupalcon:card', {
   card_image: content.field_card_image,
   card_title: content.field_card_title,
   card_description: content.field_card_description,
   card_ctas: content.field_cta,
   attributes: attributes,
-}) }}
+}) }} #}
+
+{# Call the card SDC passing props and slots. #}
+{%
+  embed('drupalcon:card') with {
+    card_title: content.field_card_title,
+    card_description: content.field_card_description,
+    card_ctas: content.field_cta,
+    attributes: attributes,
+  }
+%}
+  {% block headerSlot %}
+    <div class="card_header">
+      {{ content.field_card_image }}
+    </div>
+  {% endblock headerSlot %}
+{% endembed %}
