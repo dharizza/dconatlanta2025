@@ -18,3 +18,6 @@ libraryOverrides:
     component:
       //cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css: {}
       slider.css: {}
+  js:
+    //cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js: {}
+    slider.js: {}
