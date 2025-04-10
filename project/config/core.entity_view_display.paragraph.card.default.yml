@@ -17,14 +17,14 @@ mode: default
 content:
   field_card_description:
     type: basic_string
-    label: above
+    label: hidden
     settings: {  }
     third_party_settings: {  }
     weight: 0
     region: content
   field_card_image:
     type: entity_reference_entity_view
-    label: above
+    label: hidden
     settings:
       view_mode: default
       link: false
@@ -33,7 +33,7 @@ content:
     region: content
   field_card_title:
     type: string
-    label: above
+    label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
@@ -41,7 +41,7 @@ content:
     region: content
   field_cta:
     type: link
-    label: above
+    label: hidden
     settings:
       trim_length: 80
       url_only: false
